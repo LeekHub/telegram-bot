@@ -12,13 +12,13 @@ async function handleStockCandlestick(msg, match) {
   const stockId = match[1]
 
   if (!stockId) {
-    return this.sendMessage(chatId, '請帶入股號\ne.g. `/k 2330`', {
+    return this.sendMessage(chatId, '请带入股号码\ne.g. `/k 2330`', {
       parse_mode: 'Markdown'
     })
   }
 
   if (!isStockIdValid(stockId)) {
-    return this.sendMessage(chatId, '請輸入有效股號\ne.g. `/k 2330`', {
+    return this.sendMessage(chatId, '请输入有效股号码\ne.g. `/k 2330`', {
       parse_mode: 'Markdown'
     })
   }

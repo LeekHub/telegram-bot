@@ -50,7 +50,7 @@ describe('lib/stock stockDataNormalizer()', () => {
     expect(openPrice).toBe(undefined)
     expect(lastPrice).toBe('22.6')
     expect(turnover).toBe('9.75')
-    expect(ticks[0][0]).toBe('市價')
+    expect(ticks[0][0]).toBe('市价')
   })
 })
 

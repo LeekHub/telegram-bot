@@ -3,31 +3,31 @@ export function handleStart(msg) {
 
   this.sendMessage(
     chatId,
-    `歡迎使用盤中飧守護神，守護你盤中的便當錢
+    `欢迎使用 LeekHubBot，守护你盘中的便当钱
 
-<b>盤中走勢圖</b>
-<code>/chart 2330</code> - 查詢盤中即時走勢圖
-/chart_tse - 查詢盤中加權指數走勢圖
-/chart_otc - 查詢盤中櫃買指數走勢圖
+<b>盘中走势图</b>
+<code>/chart 2330</code> - 查询盘中即时走势图
+/chart_tse - 查询盘中加权指数走势图
+/chart_otc - 查询盘中柜买指数走势图
 
-<b>盤中價量及五檔資訊</b>
-<code>/text 2330</code> - 查詢盤中即時價量及五檔
-/text_tse - 查詢盤中加權指數狀態
-/text_otc - 查詢盤中櫃買指數狀態
+<b>盘中价量及五档资讯</b>
+<code>/text 2330</code> - 查询盘中即时价量及五档
+/text_tse - 查询盘中加权指数状态
+/text_otc - 查询盘中柜买指数状态
 
-<b>近期 K 線圖</b>
-<code>/k 2330</code> - 查詢指定股票近期 K 線
-/k_tse - 查詢加權指數近期 K 線
-/k_otc - 查詢櫃買指數近期 K 線
+<b>近期 K 线图</b>
+<code>/k 2330</code> - 查询指定股票近期 K 线
+/k_tse - 查询加权指数近期 K 线
+/k_otc - 查询柜买指数近期 K 线
 
-<b>盤後資料</b>
-/after_hours - 查詢各式盤後資料
-<code>/after_hours 2330</code> - 查詢個股盤後資料
+<b>盘后资料</b>
+/after_hours - 查询各式盘后资料
+<code>/after_hours 2330</code> - 查询个股盘后资料
 
 <b>其他</b>
-<code>/news 2330</code> - 查詢指定股票相關新聞
+<code>/news 2330</code> - 查询指定股票相关新闻
 
-資料來源: <a href="https://tw.stock.yahoo.com/">Yahoo!奇摩股市</a>、<a href="https://goodinfo.tw/StockInfo/index.asp">Goodinfo!台灣股市資訊網</a>、<a href="https://www.twse.com.tw/zh/">臺灣證券交易所</a>`,
+资料來源: <a href="https://tw.stock.yahoo.com/">Yahoo!奇摩股市</a>、<a href="https://goodinfo.tw/StockInfo/index.asp">Goodinfo!台灣股市资讯網</a>、<a href="https://www.twse.com.tw/zh/">臺灣證券交易所</a>`,
     {
       parse_mode: 'HTML',
       disable_web_page_preview: true

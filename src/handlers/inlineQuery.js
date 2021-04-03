@@ -18,7 +18,7 @@ export async function handleInlineQuery({ id, query }) {
       [
         {
           type: 'article',
-          title: '加權指數現價',
+          title: '加权指数现价',
           input_message_content: {
             message_text: getIndexHTMLTemplate(tseData),
             parse_mode: 'HTML'
@@ -27,7 +27,7 @@ export async function handleInlineQuery({ id, query }) {
         },
         {
           type: 'article',
-          title: '櫃買指數現價',
+          title: '柜买指数现价',
           input_message_content: {
             message_text: getIndexHTMLTemplate(otcData),
             parse_mode: 'HTML'
@@ -50,7 +50,7 @@ export async function handleInlineQuery({ id, query }) {
       if (stockData.name) {
         result.push({
           type: 'article',
-          title: `${query} 報價及五檔`,
+          title: `${query} 報价及五档`,
           input_message_content: {
             message_text: getStockHTMLTemplate(stockData),
             parse_mode: 'HTML'
@@ -62,7 +62,7 @@ export async function handleInlineQuery({ id, query }) {
       if (newsList && newsList.length) {
         result.push({
           type: 'article',
-          title: `${query} 相關新聞`,
+          title: `${query} 相关新闻`,
           input_message_content: {
             message_text: getNewsListHTMLTemplate(newsList),
             parse_mode: 'HTML',

@@ -26,9 +26,9 @@ export const getStockHTMLTemplate = ({
 }) => {
   return `<pre>${stockId} ${name} | <b>${currentPrice}</b> | ${risePrice} (${risePricePerc})
 
-總量 ${amount} | 內盤 ${sellAmount} | 外盤 ${buyAmount}
+總量 ${amount} | 內盘 ${sellAmount} | 外盘 ${buyAmount}
 
-最高 ${maxPrice} | 最低 ${minPrice} | 開盤 ${openPrice} | 昨收 ${lastPrice}
+最高 ${maxPrice} | 最低 ${minPrice} | 開盘 ${openPrice} | 昨收 ${lastPrice}
 
         委買        |        委賣        
 ----------------------------------------

@@ -70,7 +70,7 @@ export const stockDataNormalizer = (data) => {
   const lastPrice = mem[129]
   const turnover = (mem[423] / 100).toFixed(2).toString()
   let ticks = [
-    [mem[101] > 100000 ? '市價' : mem[101], mem[113]],
+    [mem[101] > 100000 ? '市价' : mem[101], mem[113]],
     [mem[102], mem[114]],
     [mem[103], mem[115]],
     [mem[104], mem[116]],

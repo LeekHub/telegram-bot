@@ -6,13 +6,13 @@ export async function handleStockNews(msg, match) {
   const stockId = match[1]
 
   if (!stockId) {
-    return this.sendMessage(chatId, '請帶入股號\ne.g. `/news 2330`', {
+    return this.sendMessage(chatId, '请带入股号码\ne.g. `/news 2330`', {
       parse_mode: 'Markdown'
     })
   }
 
   if (!isStockIdValid(stockId)) {
-    return this.sendMessage(chatId, '請輸入有效股號\ne.g. `/news 2330`', {
+    return this.sendMessage(chatId, '请输入有效股号码\ne.g. `/news 2330`', {
       parse_mode: 'Markdown'
     })
   }
@@ -23,7 +23,7 @@ export async function handleStockNews(msg, match) {
   }
 
   if (!newsList.length) {
-    return this.sendMessage(chatId, `查無 ${stockId} 相關新聞`)
+    return this.sendMessage(chatId, `查无 ${stockId} 相关新闻`)
   }
 
   const HTML = getNewsListHTMLTemplate(newsList)

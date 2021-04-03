@@ -22,12 +22,12 @@ export const afterHoursCallbackQueryHandlers = {
 
 function handleGeneralAfterHours(msg) {
   const chatId = msg.chat.id
-  this.sendMessage(chatId, '查詢盤後資料：', {
+  this.sendMessage(chatId, '查询盘后资料：', {
     reply_markup: {
       inline_keyboard: [
         [
           {
-            text: '外資買超排行',
+            text: '外资買超排行',
             callback_data: FOREIGN_INVESTOR_DAILY_BUY_RANK
           },
           {
@@ -37,7 +37,7 @@ function handleGeneralAfterHours(msg) {
         ],
         [
           {
-            text: '投信連續無買賣超轉買進 – 日',
+            text: '投信連續无買賣超轉買進 – 日',
             callback_data: INVESTMENT_TRUST_START_BUYING
           }
         ]
@@ -53,7 +53,7 @@ async function handleStockAfterHours(msg, match) {
   if (!isStockIdValid(stockId)) {
     return this.sendMessage(
       chatId,
-      '請輸入有效股號\ne.g. `/after_hours 2330`',
+      '请输入有效股号码\ne.g. `/after_hours 2330`',
       {
         parse_mode: 'Markdown'
       }
