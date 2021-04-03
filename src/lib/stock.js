@@ -113,6 +113,7 @@ export const fetchStockData = async (stockId) => {
   const res = await fetch(
     stockRawUrl.replace('STOCK_ID', stockId)
   ).then((res) => res.text())
+  console.log(stockRawUrl.replace('STOCK_ID', stockId))
   const parsedRes = parseRaw(res)
   const result = stockDataNormalizer(parsedRes)
 

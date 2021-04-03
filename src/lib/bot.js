@@ -34,7 +34,7 @@ bot.sendLoadingMsg = async (chatId) => {
 }
 
 bot.sendStockIdNotFoundError = (chatId, stockId) => {
-  bot.sendMessage(chatId, `查无 ${stockId}，请確認此股票已上市/櫃`)
+  bot.sendMessage(chatId, `查无 ${stockId}，请确认此股票已上市/柜`)
 }
 
 bot.sendTimeoutError = async (chatId) => {
